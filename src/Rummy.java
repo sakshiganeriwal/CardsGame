@@ -2,39 +2,6 @@ import java.util.Scanner;
 
 public class Rummy {
 	
-	public static void main(String[] args){
-		Deck deck;
-		System.out.println("Enter the number of players");
-		Scanner s = new Scanner(System.in);
-		int n = s.nextInt();
-//		deck = new Deck();
-		System.out.println("Enter type of packs:\n1.with joker\n2.without joker:");
-		int ptype = s.nextInt();
-		int pnum = 1;
-		switch(ptype){
-		case 1: 
-			deck = new Deck(pnum, 1);
-			deck.display();
-			break;
-		case 2:
-			deck = new Deck(pnum, 0);
-			deck.display();
-			break;
-		}
-		
-		
-		
-//		Hands[] hand = new Hands[n];
-//		
-//		hand = distrubuteCards(deck,n);
-//		
-//		for(int i = 0; i < n; i++){
-//			hand[i].sortSuite();
-//		}
-//		checkHands(hand[0]);
-		
-	}
-	
 	public static Hands[] distrubuteCards(Deck deck,int n){
 		deck.shuffle();
 		Hands[] hand = new Hands[n];

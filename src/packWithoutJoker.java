@@ -5,7 +5,7 @@ public class packWithoutJoker extends pack{
 		for(int i = 0; i < 4; i++){
 			for(int j = 0;j < 13; j++){
 				Card c = new Card(i, j);
-				pack.add(c);
+				p.add(c);
 			}
 		}
 	}

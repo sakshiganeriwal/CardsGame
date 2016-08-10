@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class pack {
-	ArrayList<Card> pack = new ArrayList<Card>();
+public abstract class pack {
+	ArrayList<Card> p = new ArrayList<Card>();
 
 }

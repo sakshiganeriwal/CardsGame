@@ -1,16 +1,17 @@
 
 public class packWithJoker extends pack {
 	
-	packWithJoker(){
+	packWithJoker(int n ){
 		for(int i = 0; i < 4; i++){
 			for(int j = 0;j < 13; j++){
 				Card c = new Card(i, j);
-				pack.add(c);
+				p.add(c);
 			}
 		}
-		Card joker = new Card(0);
-		pack.add(joker);
-		pack.add(joker);
+		Card joker = new Card(13);
+		for(int i = 0; i < n; i++){
+			p.add(joker);
+		}
 	}
 
 }
