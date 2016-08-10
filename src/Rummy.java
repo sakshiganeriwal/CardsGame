@@ -23,13 +23,13 @@ public class Rummy {
 		return result;
 	}
 	
-	public static boolean checkGroup(Hand hand, int n){
+	public static boolean checkNKind(Hand hand, int n){
 		hand.sortRank();
 		int count = 0;
 		for(int j = 0; j < hand.cards.size()-1 ; j++){
 			int r = hand.cards.get(j).getrank();
 			int nextr = hand.cards.get(j+1).getrank();
-			if(r==-1||r == nextr){
+			if(r==-1||(r == nextr)|| nextr ==-1){
 				count++;
 			}
 		}
